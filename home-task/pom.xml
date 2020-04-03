@@ -2,8 +2,8 @@
 <project>
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.test</groupId>
-  <artifactId>ci-training</artifactId>
-  <version>1.0</version>
+  <artifactId>skazak-custom-artifact</artifactId>
+  <version>1.0.1</version>
   <packaging>jar</packaging>
   <dependencies>
     <dependency>
