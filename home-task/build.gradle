@@ -26,18 +26,18 @@ jar {
 
 task "build-custom" {
     doLast {
-        println 'build-custom'
+        println 'my custom build task'
     }
 }
 
 task "test-custom" (dependsOn: "build-custom") {
     doLast {
-        println 'test-custom'
+        println 'my custom test task'
     }
 }
 
 task "hello"(dependsOn: "test-custom") {
     doLast {
-        println 'hello'
+        println 'hello gradle!'
     }
 }
