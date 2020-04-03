@@ -6,7 +6,17 @@ application {
     mainClassName = "com.test.Project"
 }
 
-artifactId 'custom-artifact'
+publishing {
+        publications {
+            maven(MavenPublication) {
+                groupId = 'com.test'
+                artifactId = 'custom-artifact'
+                version = '1.1'
+
+                from components.java
+            }
+        }
+    }
 
 repositories {
     mavenCentral()
