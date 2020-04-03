@@ -1,9 +1,12 @@
 apply plugin: 'java'
 apply plugin: "application"
+apply plugin: "maven-publish"
 
 application {
     mainClassName = "com.test.Project"
 }
+
+artifactId 'custom-artifact'
 
 repositories {
     mavenCentral()
