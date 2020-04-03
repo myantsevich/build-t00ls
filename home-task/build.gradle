@@ -1,12 +1,16 @@
 apply plugin: 'java'
 
 allprojects {
+    group = 'com.test'
     version = "0.1.0"
     sourceCompatibility = "1.8"
 }
 
 repositories {
-    jcenter()
+    mavenLocal()
+    maven {
+        url = uri('http://repo.maven.apache.org/maven2')
+    }
 }
 
 dependencies {
