@@ -25,3 +25,21 @@ jar {
     )
   }
 }
+
+task "build-custom" {
+    doLast {
+        println 'build-custom'
+    }
+}
+
+task "test-custom"(dependsOn: "build-custom") {
+    doLast {
+        println 'test-custom'
+    }
+}
+
+task "hello"(dependsOn: "test-custom") {
+    doLast {
+        println 'hello'
+    }
+}
