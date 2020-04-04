@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.test</groupId>
+  <groupId>com.mavenbuild.app</groupId>
   <artifactId>skazak-custom-artifact</artifactId>
   <version>0.1.0</version>
   <packaging>jar</packaging>
@@ -35,7 +35,7 @@
             <manifest>
               <addClasspath>true</addClasspath>
               <classpathPrefix>lib/</classpathPrefix>
-              <mainClass>com.test.Project</mainClass>
+              <mainClass>com.mavenbuild.app.Project</mainClass>
             </manifest>
           </archive>
         </configuration>
