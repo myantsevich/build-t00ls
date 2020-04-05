@@ -1,0 +1,13 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<hudson.tasks.Mailer_-DescriptorImpl plugin="mailer@1.30">
+  <defaultSuffix></defaultSuffix>
+  <hudsonUrl>http://jenkins.ayoursh.playpit.net/</hudsonUrl>
+  <authentication>
+    <username>mitter91@yandex.ru</username>
+    <password>{AQAAABAAAAAQr8fHXKI8mb7TE+8VVQ0ODt9OBBOYXBqBhSPwzX2bD1c=}</password>
+  </authentication>
+  <smtpHost>smtp.yandex.ru</smtpHost>
+  <useSsl>true</useSsl>
+  <smtpPort>465</smtpPort>
+  <charset>UTF-8</charset>
+</hudson.tasks.Mailer_-DescriptorImpl>
