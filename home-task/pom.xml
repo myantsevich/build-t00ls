@@ -11,6 +11,15 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
   </properties>
+  <configuration>
+        <archive>
+          <manifest>
+            <addClasspath>true</addClasspath>
+            <classpathPrefix>lib/</classpathPrefix>
+            <mainClass>com.test.Project</mainClass>
+          </manifest>
+        </archive>
+  </configuration>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
