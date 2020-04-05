@@ -1,0 +1,84 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?><project>
+  <actions/>
+  <description>build a jar from https://github.com/MNT-Lab/build-t00ls/tree/skazak with gradle</description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    
+  </properties>
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@4.2.2">
+    <configVersion>2</configVersion>
+    <userRemoteConfigs>
+      <hudson.plugins.git.UserRemoteConfig>
+        <url>https://github.com/MNT-Lab/build-t00ls</url>
+        <credentialsId>64a5cc16-b6f8-4961-abd7-251f23c97fa4</credentialsId>
+      </hudson.plugins.git.UserRemoteConfig>
+    </userRemoteConfigs>
+    <branches>
+      <hudson.plugins.git.BranchSpec>
+        <name>*/skazak</name>
+      </hudson.plugins.git.BranchSpec>
+    </branches>
+    <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+    <submoduleCfg class="list"/>
+    <extensions/>
+  </scm>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.plugins.gradle.Gradle plugin="gradle@1.36">
+      <switches/>
+      <tasks>wrapper</tasks>
+      <rootBuildScriptDir/>
+      <buildFile>home-task/build.gradle</buildFile>
+      <gradleName>Gradle63</gradleName>
+      <useWrapper>false</useWrapper>
+      <makeExecutable>true</makeExecutable>
+      <useWorkspaceAsHome>false</useWorkspaceAsHome>
+      <wrapperLocation/>
+      <passAllAsSystemProperties>false</passAllAsSystemProperties>
+      <projectProperties/>
+      <passAllAsProjectProperties>false</passAllAsProjectProperties>
+    </hudson.plugins.gradle.Gradle>
+    <hudson.plugins.gradle.Gradle plugin="gradle@1.36">
+      <switches/>
+      <tasks>build test-custom</tasks>
+      <rootBuildScriptDir/>
+      <buildFile>home-task/build.gradle</buildFile>
+      <gradleName>Gradle63</gradleName>
+      <useWrapper>true</useWrapper>
+      <makeExecutable>false</makeExecutable>
+      <useWorkspaceAsHome>false</useWorkspaceAsHome>
+      <wrapperLocation/>
+      <passAllAsSystemProperties>false</passAllAsSystemProperties>
+      <projectProperties/>
+      <passAllAsProjectProperties>false</passAllAsProjectProperties>
+    </hudson.plugins.gradle.Gradle>
+    <hudson.tasks.Shell>
+      <command>java -jar home-task/build/libs/skazak-custom-artifact-0.1.0.jar &gt; output.log
+tar -cf hello-$BUILD_NUMBER.tar.gz home-task/build/libs/skazak-custom-artifact-0.1.0.jar</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers>
+    <hudson.plugins.chucknorris.CordellWalkerRecorder plugin="chucknorris@1.2">
+      <factGenerator/>
+    </hudson.plugins.chucknorris.CordellWalkerRecorder>
+    <hudson.tasks.ArtifactArchiver>
+      <artifacts>hello-$BUILD_NUMBER.tar.gz,output.log</artifacts>
+      <allowEmptyArchive>false</allowEmptyArchive>
+      <onlyIfSuccessful>false</onlyIfSuccessful>
+      <fingerprint>false</fingerprint>
+      <defaultExcludes>true</defaultExcludes>
+      <caseSensitive>true</caseSensitive>
+    </hudson.tasks.ArtifactArchiver>
+    <hudson.tasks.Mailer plugin="mailer@1.30">
+      <recipients>siarhei_kazak@epam.com</recipients>
+      <dontNotifyEveryUnstableBuild>false</dontNotifyEveryUnstableBuild>
+      <sendToIndividuals>false</sendToIndividuals>
+    </hudson.tasks.Mailer>
+  </publishers>
+  <buildWrappers/>
+</project>
