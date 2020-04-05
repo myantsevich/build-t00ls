@@ -1,0 +1,31 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>admin</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <hudson.plugins.chucknorris.RoundhouseAction plugin="chucknorris@1.2">
+      <mStyle>BAD_ASS</mStyle>
+      <mFact>Anonymous methods and anonymous types are really all called Chuck Norris. They just don&apos;t like to boast.</mFact>
+    </hudson.plugins.chucknorris.RoundhouseAction>
+  </actions>
+  <queueId>25</queueId>
+  <timestamp>1586013002007</timestamp>
+  <startTime>1586013002012</startTime>
+  <result>FAILURE</result>
+  <duration>140</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>/var/jenkins_home/workspace/helloworld-abatura-gradle-build</workspace>
+  <hudsonVersion>2.222.1</hudsonVersion>
+  <scm class="hudson.scm.NullChangeLogParser"/>
+  <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>
+</build>

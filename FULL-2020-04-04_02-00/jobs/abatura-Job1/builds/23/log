@@ -1,0 +1,8 @@
+Started by timer
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/abatura-Job1
+Installing JDK jdk-8u221-oth-JPR
+Downloading JDK from https://download.oracle.com/otn/java/jdk/8u221-b11/230deb18db3e4014bb8e3e8324f81b43/jdk-8u221-linux-x64.tar.gz
+[8mha:////4LoeTW8LXki8i2SpQWSEzkiarSYcugiuc0bWxW5jMlKyAAAAsh+LCAAAAAAAAP9djDEOgkAQRUeMHsDSeAa2syE0YiFKaDzBBiaIjrub2cFA5R28hjYewuN4BzFY+Zv/mvceb5h4hsWhKb01YWGNt4ThpnPIVJtTbgWX8f0Z39wrgCCFKaGp5JDBuGESmGVHfdGKtKnUXrg2VdQyzP9yyfDfGAwbBQCt6+EqEKkSfcG1E8urLtdnVD9frCUfbte71HjRRMgKjSAnjGUPtaYPq19LNcAAAAA=[0mOracle now requires Oracle account to download previous versions of JDK. Please specify your Oracle account username/password.
+ERROR: Unable to install JDK unless a valid Oracle account username/password is provided in the system configuration.
+Finished: FAILURE

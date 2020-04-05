@@ -1,0 +1,12 @@
+Started by upstream project "[8mha:////4LrWSAmeb5GtVUxoKxOJV139F6L/NyhUt/jP9GvIVcskAAAAsB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyFEgY1/az8JP3c/JTSnFRdU93EpMSS0qJE3aTSzJwU3eLkjFSQRIo+AAEwEt3bAAAA[0mmodule-5-abatura-build-scheduled" build number [8mha:////4HiP0Zo1fcy5+PHpoGHzVYtJUiy7DGUvqbgLIz0ypt3RAAAAsh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYN/az8JP3c/JTSnFRdU93EpMSS0qJE3aTSzJwU3eLkjFSQRIq+kSEAAQAv490AAAA=[0m21
+originally caused by:
+ Started by user [8mha:////4N85OiWNoNhv3Htks6RpMGNbOXpsn8Gu/DmQkYpglGbKAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgZu/dLi1CL9xJTczDwACG0V4sAAAAA=[0mAndrei Batura
+Running as SYSTEM
+Building in workspace /var/jenkins_home/artifacts
+[artifacts] $ /bin/sh -xe /tmp/jenkins7848528500344161422.sh
++ tar -xzf
+tar: option requires an argument -- 'f'
+Try 'tar --help' or 'tar --usage' for more information.
+Build step 'Execute shell' marked build as failure
+Archiving artifacts
+Finished: FAILURE
