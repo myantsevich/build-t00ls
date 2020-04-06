@@ -35,10 +35,7 @@ public interface HelloWorldService {
      * @return A simple hello world message
      */
     @WebMethod
-        while (true){
-            String sayHello();
-        }
-
+    String sayHello();
 
     /**
      * Say hello to someone precisely
