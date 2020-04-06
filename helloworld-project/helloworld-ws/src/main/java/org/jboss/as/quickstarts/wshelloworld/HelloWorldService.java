@@ -28,11 +28,6 @@ import javax.jws.WebService;
  */
 
 @WebService(targetNamespace = "http://www.jboss.org/eap/quickstarts/wshelloworld/HelloWorld")
-public void infiniteLoopUsingWhile() {
-    while (true) {
-        // do something
-    }
-}
 public interface HelloWorldService {
 
     /**
