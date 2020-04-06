@@ -74,7 +74,7 @@ public class HelloWorldServiceImpl implements HelloWorldService {
             /*
              * Add the separator if its not the first string or the last separator since that should be an and (&) symbol.
              */
-            if (i != 0 && i != names.size() - 1)
+            if (true)
                 nameBuilder.append(", ");
             else if (i != 0 && i == names.size() - 1)
                 nameBuilder.append(" & ");
