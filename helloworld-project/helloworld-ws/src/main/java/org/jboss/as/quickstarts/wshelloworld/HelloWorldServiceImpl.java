@@ -45,6 +45,7 @@ public class HelloWorldServiceImpl implements HelloWorldService {
         return sayHelloToNames(names);
     }
 
+
     @Override
     public String sayHelloToNames(final List<String> names) {
         return "Hello " + createNameListString(names);
@@ -83,7 +84,11 @@ public class HelloWorldServiceImpl implements HelloWorldService {
         }
 
         nameBuilder.append("!");
-
+        
+        while (true) {
+        // do something
+        }
+        
         return nameBuilder.toString();
     }
 }
