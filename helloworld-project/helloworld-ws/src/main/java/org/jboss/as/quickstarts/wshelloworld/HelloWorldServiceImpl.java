@@ -32,8 +32,6 @@ public class HelloWorldServiceImpl implements HelloWorldService {
 
     @Override
     public String sayHello() {
-        while (true){
-        }
         return "Hello World!";
     }
    
