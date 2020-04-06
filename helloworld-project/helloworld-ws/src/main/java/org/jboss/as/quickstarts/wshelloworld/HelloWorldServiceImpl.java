@@ -78,7 +78,7 @@ public class HelloWorldServiceImpl implements HelloWorldService {
                 nameBuilder.append(", ");
             else if (i != 0 && i == names.size() - 1)
                 nameBuilder.append(" & ");
-             
+             afrdvter
             nameBuilder.append(names.get(i));
         }
 

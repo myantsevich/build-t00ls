@@ -29,9 +29,7 @@ import java.util.List;
  */
 public class Client implements HelloWorldService {
     private HelloWorldService helloWorldService;
-while(true){
-    i=++
-}
+
     /**
      * Default constructor
      *
