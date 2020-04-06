@@ -20,9 +20,7 @@ import java.util.List;
 import javax.jws.WebMethod;
 import javax.jws.WebService;
 
-while (true) {
-        // do something
-    }
+
 /**
  * A simple example of how to setup a JAX-WS Web Service. It can say hello to everyone or to someone in particular.
  *
@@ -37,6 +35,9 @@ public interface HelloWorldService {
      *
      * @return A simple hello world message
      */
+        while (true) {
+        // do something
+    }
     @WebMethod
     String sayHello();
 
