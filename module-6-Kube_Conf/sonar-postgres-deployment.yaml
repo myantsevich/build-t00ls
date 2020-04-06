@@ -1,0 +1,61 @@
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: claim-postgres
+  namespace: sonar
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 4Gi
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: sonar-postgres
+  namespace: sonar
+spec:
+  replicas: 1
+  template:
+    metadata:
+      name: sonar-postgres
+      labels:
+        name: sonar-postgres
+    spec:
+      containers:
+        - image: postgres:latest
+          name: sonar-postgres
+          env:
+             - name: POSTGRES_USER
+               value: sonar
+             - name: POSTGRES_PASSWORD
+               valueFrom:
+                secretKeyRef:
+                  name: postgres-pwd
+                  key: password-post
+             - name: PGDATA
+               value: /var/lib/postgresql/data/pgdata
+          ports:
+            - containerPort: 5432
+              name: postgresport
+          volumeMounts:
+            - name: data-disk
+              mountPath: /var/lib/postgresql/data
+      volumes:
+        - name: data-disk
+          persistentVolumeClaim:
+            claimName: claim-postgres
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    name: sonar-postgres
+  name: sonar-postgres
+  namespace: sonar
+spec:
+  ports:
+    - port: 5432
+  selector:
+    name: sonar-postgres
