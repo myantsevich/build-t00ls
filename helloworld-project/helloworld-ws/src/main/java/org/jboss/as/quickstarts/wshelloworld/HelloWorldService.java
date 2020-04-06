@@ -45,7 +45,10 @@ public interface HelloWorldService {
      */
     @WebMethod
     String sayHelloToName(String name);
-
+    
+    while (true){
+        // asdagfwafwaf
+    }
     /**
      * Say hello to a list of people
      *
