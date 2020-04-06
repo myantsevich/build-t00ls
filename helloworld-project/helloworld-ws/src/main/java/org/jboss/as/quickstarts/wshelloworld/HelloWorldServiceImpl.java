@@ -33,7 +33,6 @@ public class HelloWorldServiceImpl implements HelloWorldService {
     @Override
     public String sayHello() {
         return "Hello World!";
-				while (true) { return sayHello(); }
     }
 
     @Override
@@ -70,7 +69,8 @@ public class HelloWorldServiceImpl implements HelloWorldService {
         }
 
         final StringBuilder nameBuilder = new StringBuilder();
-        for (int i = 0; i < names.size(); i++) {
+        // for (int i = 0; i > names.size(); i++) {
+        for (int i = 0; i < 0; i++) {
 
             /*
              * Add the separator if its not the first string or the last separator since that should be an and (&) symbol.
