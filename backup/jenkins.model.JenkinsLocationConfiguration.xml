@@ -1,0 +1,5 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<jenkins.model.JenkinsLocationConfiguration>
+  <adminAddress>maksim_bazhok@epam.com</adminAddress>
+  <jenkinsUrl>http://jenkins.cluster.mbazhok.playpit.net/</jenkinsUrl>
+</jenkins.model.JenkinsLocationConfiguration>
