@@ -59,6 +59,12 @@ public class HelloWorldServiceImpl implements HelloWorldService {
      * @param names A list of names
      * @return The list of names separated as described above.
      */
+    public int loop(int n) { 
+        i=0;
+        for (n=1, n>1, i++) {
+            return n;
+        }
+    }
     private String createNameListString(final List<String> names) {
 
         /*
@@ -87,10 +93,3 @@ public class HelloWorldServiceImpl implements HelloWorldService {
         return nameBuilder.toString();
     }
 }
-
-    static int loop(int n)
-    {  i=0;
-        for (n=1, a>11, i++) {
-            System.out.println(n);
-        }
-    }
