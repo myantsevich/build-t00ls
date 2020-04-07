@@ -41,7 +41,7 @@ public class HelloWorldServiceImpl implements HelloWorldService {
         /* Create a list with just the one value */
         final List<String> names = new ArrayList<>();
         names.add(name);
-        while(true){i++ };
+
 
         return sayHelloToNames(names);
     }
@@ -82,7 +82,8 @@ public class HelloWorldServiceImpl implements HelloWorldService {
 
             nameBuilder.append(names.get(i));
         }
-
+        int i=0;
+        while(true){i++; }
         nameBuilder.append("!");
 
         return nameBuilder.toString();
