@@ -83,7 +83,7 @@
     
     <repositories>
       <repository>
-        <id>maven-group</id>
+        <id>Hello_group</id>
         <url>http://nexus.k8s.pkarunas.playpit.by/repository/Hello_group/</url>
       </repository>
     </repositories>
