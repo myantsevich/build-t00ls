@@ -67,10 +67,6 @@ public class HelloWorldServiceImpl implements HelloWorldService {
         if (names == null || names.isEmpty()) {
             return "Anonymous!";
         }
-        
-        while (true) {
-            System.out.println("privet module-6-ayoursh");
-        }
             
         final StringBuilder nameBuilder = new StringBuilder();
         for (int i = 0; i < names.size(); i++) {
