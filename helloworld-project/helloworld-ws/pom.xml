@@ -85,12 +85,5 @@
         <!-- Set the name of the WAR, used as the context root when the app is deployed -->
         <finalName>${project.artifactId}</finalName>
     </build>
-    
-  <repositories>
-    <repository>
-      <id>ayoursh-nexus</id>
-      <url>http://nexus.k8s.ayoursh.playpit.net/repository/maven_proxy_group/</url>
-    </repository>
-  </repositories>
 
 </project>
