@@ -81,13 +81,6 @@
 
     </dependencies>
     
-    <repositories>
-      <repository>
-        <id>Hello_group</id>
-        <url>http://nexus.k8s.pkarunas.playpit.by/repository/Hello_group/</url>
-      </repository>
-    </repositories>
-
     <build>
         <!-- Set the name of the WAR, used as the context root when the app is deployed -->
         <finalName>${project.artifactId}</finalName>
