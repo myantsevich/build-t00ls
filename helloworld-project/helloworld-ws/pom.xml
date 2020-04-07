@@ -15,6 +15,12 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 -->
+<distributionManagement>
+ <snapshotRepository>
+  <id>nexus</id>
+  <url>http://nexus.abatura.playpit.net/repository/jenkins-mvn/</url>
+ </snapshotRepository>
+</distributionManagement>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
@@ -84,6 +90,18 @@
     <build>
         <!-- Set the name of the WAR, used as the context root when the app is deployed -->
         <finalName>${project.artifactId}</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.sonatype.plugins</groupId>
+                <artifactId>nexus-staging-maven-plugin</artifactId>
+                <version>1.6.3</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <serverId>nexus</serverId>
+                    <nexusUrl>http://nexus.abatura.playpit.net/repository/jenkins-mvn/</nexusUrl>
+                </configuration>
+            </plugin>
+        </plugins>
     </build>
 
 </project>
