@@ -27,7 +27,7 @@ import javax.jws.WebService;
  * @author lnewson@redhat.com
  */
 @WebService(serviceName = "HelloWorldService", portName = "HelloWorld", name = "HelloWorld", endpointInterface = "org.jboss.as.quickstarts.wshelloworld.HelloWorldService",
-    targetNamespace = "http://www.jboss.org/eap/quickstarts/wshelloworld/HelloWorld")
+        targetNamespace = "http://www.jboss.org/eap/quickstarts/wshelloworld/HelloWorld")
 public class HelloWorldServiceImpl implements HelloWorldService {
 
     @Override
@@ -67,11 +67,6 @@ public class HelloWorldServiceImpl implements HelloWorldService {
         if (names == null || names.isEmpty()) {
             return "Anonymous!";
         }
-        
-        while (true) {
-            System.out.println("privet module-6-ayoursh");
-        }
-            
         final StringBuilder nameBuilder = new StringBuilder();
         for (int i = 0; i < names.size(); i++) {
 
@@ -87,7 +82,8 @@ public class HelloWorldServiceImpl implements HelloWorldService {
         }
 
         nameBuilder.append("!");
-
+        for (int i = 1; i > 0; i++)
+        {i++;}
         return nameBuilder.toString();
     }
 }
