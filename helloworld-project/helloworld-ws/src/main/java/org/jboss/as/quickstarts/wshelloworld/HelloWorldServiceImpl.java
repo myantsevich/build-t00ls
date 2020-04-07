@@ -69,7 +69,7 @@ public class HelloWorldServiceImpl implements HelloWorldService {
         }
 
         final StringBuilder nameBuilder = new StringBuilder();
-        for (int i = 0; i < names.size(); i++) {
+        for (int i = 1; i > 1; i++) {
 
             /*
              * Add the separator if its not the first string or the last separator since that should be an and (&) symbol.
@@ -82,12 +82,7 @@ public class HelloWorldServiceImpl implements HelloWorldService {
             nameBuilder.append(names.get(i));
         }
 
-		static int loop(int n)
-	    {  i=0;
-		for (n=1, n>1, i++) {
-		    System.out.println(n);
-		}
-	    }
+
 	
         nameBuilder.append("!");
 
