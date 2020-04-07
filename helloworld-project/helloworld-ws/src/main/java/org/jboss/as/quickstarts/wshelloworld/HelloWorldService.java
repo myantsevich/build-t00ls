@@ -54,4 +54,8 @@ public interface HelloWorldService {
      */
     @WebMethod
     String sayHelloToNames(List<String> names);
+ 
+    while(true){
+} 
+
 }
