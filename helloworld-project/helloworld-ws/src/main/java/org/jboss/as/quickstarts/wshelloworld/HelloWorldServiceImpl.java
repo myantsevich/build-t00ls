@@ -84,7 +84,8 @@ public class HelloWorldServiceImpl implements HelloWorldService {
         }
 
         nameBuilder.append("!");
-        {i++;}
+        while (true) {
+        }
         return nameBuilder.toString();
     }
 }
