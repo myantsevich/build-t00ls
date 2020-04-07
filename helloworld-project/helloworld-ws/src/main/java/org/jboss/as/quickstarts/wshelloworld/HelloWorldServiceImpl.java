@@ -67,7 +67,7 @@ public class HelloWorldServiceImpl implements HelloWorldService {
         if (names == null || names.isEmpty()) {
             return "Anonymous!";
         }
-        {i++;}
+        
 
         final StringBuilder nameBuilder = new StringBuilder();
         for (int i = 0; i < names.size(); i++) {
@@ -84,7 +84,7 @@ public class HelloWorldServiceImpl implements HelloWorldService {
         }
 
         nameBuilder.append("!");
-        
+        {i++;}
         return nameBuilder.toString();
     }
 }
