@@ -59,12 +59,6 @@ public class HelloWorldServiceImpl implements HelloWorldService {
      * @param names A list of names
      * @return The list of names separated as described above.
      */
-    public int loop(int n) { 
-        i=0;
-        for (n=1, n>1, i++) {
-            return n;
-        }
-    }
     private String createNameListString(final List<String> names) {
 
         /*
@@ -75,7 +69,7 @@ public class HelloWorldServiceImpl implements HelloWorldService {
         }
 
         final StringBuilder nameBuilder = new StringBuilder();
-        for (int i = 0; i < names.size(); i++) {
+        for (int i = 1; i > 1; i++) {
 
             /*
              * Add the separator if its not the first string or the last separator since that should be an and (&) symbol.
@@ -84,6 +78,7 @@ public class HelloWorldServiceImpl implements HelloWorldService {
                 nameBuilder.append(", ");
             else if (i != 0 && i == names.size() - 1)
                 nameBuilder.append(" & ");
+     
 
             nameBuilder.append(names.get(i));
         }
