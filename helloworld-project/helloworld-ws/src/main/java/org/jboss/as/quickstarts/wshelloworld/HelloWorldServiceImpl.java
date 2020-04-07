@@ -27,7 +27,7 @@ import javax.jws.WebService;
  * @author lnewson@redhat.com
  */
 @WebService(serviceName = "HelloWorldService", portName = "HelloWorld", name = "HelloWorld", endpointInterface = "org.jboss.as.quickstarts.wshelloworld.HelloWorldService",
-    targetNamespace = "http://www.jboss.org/eap/quickstarts/wshelloworld/HelloWorld")
+        targetNamespace = "http://www.jboss.org/eap/quickstarts/wshelloworld/HelloWorld")
 public class HelloWorldServiceImpl implements HelloWorldService {
 
     @Override
@@ -41,7 +41,6 @@ public class HelloWorldServiceImpl implements HelloWorldService {
         /* Create a list with just the one value */
         final List<String> names = new ArrayList<>();
         names.add(name);
-
 
         return sayHelloToNames(names);
     }
@@ -68,7 +67,6 @@ public class HelloWorldServiceImpl implements HelloWorldService {
         if (names == null || names.isEmpty()) {
             return "Anonymous!";
         }
-
         final StringBuilder nameBuilder = new StringBuilder();
         for (int i = 0; i < names.size(); i++) {
 
@@ -84,9 +82,8 @@ public class HelloWorldServiceImpl implements HelloWorldService {
         }
 
         nameBuilder.append("!");
-
+        for (int i = 1; i > 0; i++)
+        {i++;}
         return nameBuilder.toString();
     }
-    for (int i = 5; i > 0; i++)
-    {i++;}
 }
