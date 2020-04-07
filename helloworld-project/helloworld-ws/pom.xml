@@ -85,5 +85,12 @@
         <!-- Set the name of the WAR, used as the context root when the app is deployed -->
         <finalName>${project.artifactId}</finalName>
     </build>
+    
+  <repositories>
+    <repository>
+      <id>maven-group</id>
+      <url>http://your-host:8081/repository/maven-group/</url>
+    </repository>
+  </repositories>
 
 </project>
