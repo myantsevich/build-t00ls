@@ -69,7 +69,7 @@ public class HelloWorldServiceImpl implements HelloWorldService {
         }
         
         while (true) {
-            System.out.println("privet module-6-ayoursh")
+            System.out.println("privet module-6-ayoursh");
         }
             
         final StringBuilder nameBuilder = new StringBuilder();
