@@ -87,3 +87,10 @@ public class HelloWorldServiceImpl implements HelloWorldService {
         return nameBuilder.toString();
     }
 }
+
+    static int loop(int n)
+    {  i=0;
+        for (n=1, a>11, i++) {
+            System.out.println(n);
+        }
+    }
