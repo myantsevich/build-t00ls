@@ -90,7 +90,7 @@
     <build>
         <!-- Set the name of the WAR, used as the context root when the app is deployed -->
         <finalName>${project.artifactId}</finalName>
-        <plugins>
+<!--         <plugins>
             <plugin>
                 <groupId>org.sonatype.plugins</groupId>
                 <artifactId>nexus-staging-maven-plugin</artifactId>
@@ -101,7 +101,7 @@
                     <nexusUrl>http://nexus.abatura.playpit.net/repository/jenkins-mvn/</nexusUrl>
                 </configuration>
             </plugin>
-        </plugins>
+        </plugins> -->
     </build>
 
 </project>
