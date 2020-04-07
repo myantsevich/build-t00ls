@@ -89,7 +89,7 @@
   <repositories>
     <repository>
       <id>maven-group</id>
-      <url>http://your-host:8081/repository/maven-group/</url>
+      <url>http://nexus.k8s.ayoursh.playpit.net/repository/maven_proxy_group/</url>
     </repository>
   </repositories>
 
