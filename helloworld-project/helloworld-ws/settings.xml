@@ -1,0 +1,10 @@
+<settings>
+  <mirrors>
+    <mirror>
+      <id>nexus</id>
+      <mirrorOf>*</mirrorOf>
+      <name>Nexus</name>
+      <url>http://nexus.abatura.playpit.net/repository/jenkins-mvn/</url>
+    </mirror>
+  </mirrors>
+</settings>
