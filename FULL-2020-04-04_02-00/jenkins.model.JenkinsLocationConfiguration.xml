@@ -1,5 +1,0 @@
-<?xml version='1.1' encoding='UTF-8'?>
-<jenkins.model.JenkinsLocationConfiguration>
-  <adminAddress>Andrei_Batura@epam.com</adminAddress>
-  <jenkinsUrl>http://35.184.185.99:8080/</jenkinsUrl>
-</jenkins.model.JenkinsLocationConfiguration>

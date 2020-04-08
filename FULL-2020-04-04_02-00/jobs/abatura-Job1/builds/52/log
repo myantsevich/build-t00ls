@@ -1,8 +1,0 @@
-Started by timer
-Started by timer
-Running as SYSTEM
-Building in workspace /var/jenkins_home/workspace/abatura-Job1
-[abatura-Job1] $ /bin/sh -xe /tmp/jenkins7298471950886661540.sh
-+ echo Job1 Runs
-Job1 Runs
-Finished: SUCCESS
