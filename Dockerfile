@@ -12,6 +12,7 @@ RUN tar xvfz apache*.tar.gz
 RUN mv apache-tomcat-8.5.54 /opt/tomcat
 #RUN adduser -D -home /opt/tomcat tomcat
 EXPOSE 8080
-COPY /opt/jenkins/workspace/module-8-mfilipovich-build/helloworld-project/helloworld-ws/target/helloworld-ws.war /opt/tomcat/webapps/helloworld-ws.war
+
+COPY helloworld-ws.war /opt/tomcat/webapps/
 
 CMD ["/opt/tomcat/bin/catalina.sh", "run"]
