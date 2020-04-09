@@ -12,6 +12,6 @@ RUN tar xvfz apache*.tar.gz
 RUN mv apache-tomcat-8.5.54 /opt/tomcat
 #RUN adduser -D -home /opt/tomcat tomcat
 EXPOSE 8080
-RUN cp helloworld-project/helloworld-ws/target/helloworld-ws-sources.jar /opt/tomcat/webapps/
+RUN cp helloworld-project/helloworld-ws/target/helloworld-ws.war /opt/tomcat/webapps/
 
 CMD ["/opt/tomcat/bin/catalina.sh", "run"]
