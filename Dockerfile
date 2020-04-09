@@ -6,9 +6,9 @@ zip \
 unzip
 
 WORKDIR /opt
-RUN wget http://ftp.byfly.by/pub/apache.org/tomcat/tomcat-8/v8.5.51/bin/apache-tomcat-8.5.51.tar.gz
+RUN wget http://ftp.byfly.by/pub/apache.org/tomcat/tomcat-8/v8.5.54/bin/apache-tomcat-8.5.54.tar.gz
 RUN tar xvfz apache*.tar.gz
-RUN mv apache-tomcat-8.5.51 /opt/tomcat
+RUN mv apache-tomcat-8.5.54 /opt/tomcat
 RUN useradd -M -d /opt/tomcat tomcat
 EXPOSE 8080
 
