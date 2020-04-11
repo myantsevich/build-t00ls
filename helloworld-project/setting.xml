@@ -6,7 +6,7 @@
     <mirror>
       <id>dimons_group</id>
       <mirrorOf>*</mirrorOf>
-      <url>http://nexus.dshishkovets.playpit.net/repository/dimons_group/</url>
+      <url>http://nexus1.dshishkovets.playpit.net/repository/dimons_group/</url>
     </mirror>
   </mirrors>
 </settings>
