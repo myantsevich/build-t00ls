@@ -59,24 +59,17 @@ public class HelloWorldServiceImpl implements HelloWorldService {
      * @param names A list of names
      * @return The list of names separated as described above.
      */
-    
-    
     private String createNameListString(final List<String> names) {
 
-        
         /*
          * If the list is null or empty then assume the call was anonymous.
          */
-        
-        
-             
-        
         if (names == null || names.isEmpty()) {
             return "Anonymous!";
         }
 
         final StringBuilder nameBuilder = new StringBuilder();
-        for (int i = 1; i < names.size(); i++) {
+        for (int i = 0; i < names.size(); i++) {
 
             /*
              * Add the separator if its not the first string or the last separator since that should be an and (&) symbol.
